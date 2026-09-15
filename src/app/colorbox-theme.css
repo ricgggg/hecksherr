@@ -1,0 +1,19 @@
+/* Green Carrier Lightbox Theme */
+
+.yarl__container {
+  background-color: rgba(27, 58, 107, 0.92) !important;
+}
+
+.yarl__button {
+  filter: none;
+  color: #ffffff;
+}
+
+.yarl__icon {
+  color: #ffffff;
+}
+
+.yarl__slide_title,
+.yarl__slide_description {
+  color: #ffffff;
+}

@@ -1,0 +1,59 @@
+{
+  "shipments": [
+    {
+      "trackingNumber": "GC26-VX2LB2K",
+      "senderName": "John Doe",
+      "senderPhone": "999999999",
+      "senderAddress": "99 main street colorado",
+      "receiverName": "Jane Smith",
+      "receiverPhone": "88888888888888",
+      "receiverAddress": "453 oka avenue los angeles",
+      "packageDescription": "laptop",
+      "weight": "6",
+      "estimatedDelivery": "2026-07-20",
+      "estimatedDeliveryTime": "00:09",
+      "currentStatus": "Customs Hold",
+      "createdAt": "2026-07-19T09:00:37.853Z",
+      "events": [
+        {
+          "status": "Order Placed",
+          "location": "99 main street colorado",
+          "description": "Shipment order has been placed and is being processed by Green Carrier.",
+          "eventDate": "2026-07-19",
+          "eventTime": "09:59"
+        },
+        {
+          "status": "Customs Hold",
+          "location": "ph",
+          "description": "payment fee ",
+          "eventDate": "2026-07-19",
+          "eventTime": "10:44"
+        }
+      ]
+    },
+    {
+      "trackingNumber": "GC26-54NTYEN",
+      "senderName": "Aaaaaaa",
+      "senderPhone": "09999999999999",
+      "senderAddress": "9999999",
+      "receiverName": "9999999",
+      "receiverPhone": "9999999999999",
+      "receiverAddress": "99999999",
+      "packageDescription": "9999999999999999999",
+      "weight": "999999",
+      "estimatedDelivery": "2027-09-09",
+      "estimatedDeliveryTime": "09:00",
+      "currentStatus": "Order Placed",
+      "createdAt": "2026-07-19T09:03:26.749Z",
+      "events": [
+        {
+          "status": "Order Placed",
+          "location": "9999999",
+          "description": "Shipment order has been placed and is being processed by Green Carrier.",
+          "eventDate": "2026-07-19",
+          "eventTime": "10:03"
+        }
+      ]
+    }
+  ]
+}
