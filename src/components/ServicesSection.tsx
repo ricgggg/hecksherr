@@ -76,7 +76,7 @@ export default function ServicesSection() {
           }}
         >
           With over two decades of global logistics experience and a
-          client-first team, Green Carrier delivers reliable, efficient, and
+          client-first team, Hecksher delivers reliable, efficient, and
           sustainable freight solutions by sea and air. To us, every shipment
           matters.
         </motion.p>
@@ -140,7 +140,7 @@ export default function ServicesSection() {
                 borderTop: "1px solid rgba(255,255,255,0.2)",
               }}
             >
-              Discover FCL solutions with Green Carrier →
+              Discover FCL solutions with Hecksher →
             </Link>
           </motion.div>
 
@@ -193,7 +193,7 @@ export default function ServicesSection() {
                 borderTop: "1px solid rgba(255,255,255,0.2)",
               }}
             >
-              Discover LCL solutions with Green Carrier →
+              Discover LCL solutions with Hecksher →
             </Link>
           </motion.div>
 

@@ -78,7 +78,7 @@ export default function CareerPage() {
               marginBottom: "16px",
             }}
           >
-            Career at Green Carrier
+            Career at Hecksher
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -138,7 +138,7 @@ export default function CareerPage() {
                 marginBottom: "24px",
               }}
             >
-              Why Green Carrier?
+              Why Hecksher?
             </h2>
             <p style={{ fontSize: "16px", color: "#3a4a5c", lineHeight: 1.8, marginBottom: "24px" }}>
               We are a company built on relationships. Whether you are a recent
@@ -171,7 +171,7 @@ export default function CareerPage() {
           >
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-              alt="Green Carrier team"
+              alt="Hecksher team"
               style={{
                 width: "100%",
                 height: "460px",

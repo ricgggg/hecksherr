@@ -18,7 +18,7 @@
         {
           "status": "Order Placed",
           "location": "99 main street colorado",
-          "description": "Shipment order has been placed and is being processed by Green Carrier.",
+          "description": "Shipment order has been placed and is being processed by Hecksher.",
           "eventDate": "2026-07-19",
           "eventTime": "09:59"
         },
@@ -49,7 +49,7 @@
         {
           "status": "Order Placed",
           "location": "9999999",
-          "description": "Shipment order has been placed and is being processed by Green Carrier.",
+          "description": "Shipment order has been placed and is being processed by Hecksher.",
           "eventDate": "2026-07-19",
           "eventTime": "10:03"
         }

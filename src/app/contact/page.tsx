@@ -20,19 +20,19 @@ const offices = [
     city: "Houston",
     address: "14 Harbor Commerce Drive, Suite 800\nHouston, TX 77002, USA",
     phone: "+1 (713) 555 0198",
-    email: "houston@hecksherr.com",
+    email: "info@hecksherr.com",
   },
   {
     city: "Rotterdam",
     address: "Waalhaven Oostzijde 12\n3087 BM Rotterdam, Netherlands",
     phone: "+31 10 555 0234",
-    email: "rotterdam@hecksherr.com",
+    email: "info@hecksherr.com",
   },
   {
     city: "Singapore",
     address: "80 Raffles Place, Level 22\nSingapore 048624",
     phone: "+65 6555 0178",
-    email: "singapore@hecksherr.com",
+    email: "info@hecksherr.com",
   },
 ];
 
@@ -47,13 +47,58 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  // Honeypot — hidden from real visitors, bots tend to fill it.
+  const [website, setWebsite] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
+
+    // Honeypot: real visitors never fill this. Pretend success to bots.
+    if (website.trim() !== "") {
+      setSubmitted(true);
+      return;
+    }
+
+    const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
+    if (!formId) {
+      setError("The contact form is not configured yet. Please email us at info@hecksherr.com.");
+      return;
+    }
+
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch(`https://formspree.io/f/${formId}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `New website enquiry from ${form.name}${form.service ? ` — ${form.service}` : ""}`,
+          name: form.name,
+          email: form.email,
+          company: form.company || "—",
+          phone: form.phone || "—",
+          service: form.service || "—",
+          message: form.message,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        const detail = Array.isArray(data.errors)
+          ? data.errors.map((er: { message?: string }) => er.message).filter(Boolean).join(", ")
+          : "";
+        throw new Error(detail || "We couldn't send your message. Please try again or email info@hecksherr.com.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "We couldn't send your message. Please try again or email info@hecksherr.com."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -92,7 +137,7 @@ export default function ContactPage() {
               maxWidth: "700px",
             }}
           >
-            Let's move your cargo — together
+            Let&apos;s move your cargo — together
           </motion.h1>
         </div>
       </section>
@@ -153,6 +198,16 @@ export default function ContactPage() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+                <input
+                  type="text"
+                  name="website"
+                  value={website}
+                  onChange={(e) => setWebsite(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+                />
                 <div
                   style={{
                     display: "grid",
@@ -327,6 +382,12 @@ export default function ContactPage() {
                     onBlur={(e) => (e.target.style.borderColor = "rgba(27,58,107,0.2)")}
                   />
                 </div>
+
+                {error && (
+                  <p role="alert" style={{ color: "#B42318", fontSize: "14px", fontWeight: 600, margin: 0 }}>
+                    {error}
+                  </p>
+                )}
 
                 <button
                   type="submit"

@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
           status: "Order Placed",
           location: senderAddress,
           description:
-            "Shipment order has been placed and is being processed by Green Carrier.",
+            "Shipment order has been placed and is being processed by Hecksher.",
           eventDate: orderDate,
           eventTime: orderTime,
         },

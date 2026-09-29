@@ -36,7 +36,7 @@ export default function AboutSection() {
               marginBottom: "20px",
             }}
           >
-            About Green Carrier
+            About Hecksher
           </p>
 
           <h2
@@ -61,7 +61,7 @@ export default function AboutSection() {
           >
             From our offices across North America, Europe, Asia, and the
             Middle East, we offer efficient logistics and supply chain solutions
-            to clients worldwide. Green Carrier is present at the world's most
+            to clients worldwide. Hecksher is present at the world's most
             important trading hubs and major port cities, holding a strong and
             trusted position in the global market.
           </p>

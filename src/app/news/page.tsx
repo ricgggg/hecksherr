@@ -7,7 +7,7 @@ const allArticles = [
   {
     id: 1,
     category: "News",
-    title: "Green Carrier expands operations into Southeast Asia with new Singapore hub",
+    title: "Hecksher expands operations into Southeast Asia with new Singapore hub",
     excerpt: "Our new Singapore office strengthens our regional capabilities across ASEAN, giving clients faster access to key Asian manufacturing hubs.",
     date: "July 6, 2026",
     image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80",
@@ -16,7 +16,7 @@ const allArticles = [
   {
     id: 2,
     category: "Insights",
-    title: "How Green Carrier is reducing ocean freight emissions across FCL and LCL shipments",
+    title: "How Hecksher is reducing ocean freight emissions across FCL and LCL shipments",
     excerpt: "A detailed look at our biofuel inset program and how it delivers verified carbon reductions for both full and partial container shipments.",
     date: "June 23, 2026",
     image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=600&q=80",
@@ -34,7 +34,7 @@ const allArticles = [
   {
     id: 4,
     category: "Blue Initiative",
-    title: "Green Carrier Blue Initiative: 12 months of ocean cleanup partnerships",
+    title: "Hecksher Blue Initiative: 12 months of ocean cleanup partnerships",
     excerpt: "One year in, our Blue Initiative has supported the removal of over 400 tonnes of ocean plastic across 8 coastal communities.",
     date: "May 28, 2026",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
@@ -43,7 +43,7 @@ const allArticles = [
   {
     id: 5,
     category: "News",
-    title: "Green Carrier wins Global Logistics Excellence Award 2026",
+    title: "Hecksher wins Global Logistics Excellence Award 2026",
     excerpt: "We are proud to have been recognized at this year's Global Freight Summit for innovation in sustainable shipping and client service.",
     date: "May 14, 2026",
     image: "https://images.unsplash.com/photo-1521791055366-0d553872952f?w=600&q=80",
@@ -99,7 +99,7 @@ export default function NewsPage() {
               maxWidth: "700px",
             }}
           >
-            News, insights, and stories from Green Carrier
+            News, insights, and stories from Hecksher
           </motion.h1>
         </div>
       </section>

@@ -673,7 +673,7 @@ export default function AdminPage(){
             </button>
           </form>
         </div>
-        <p style={{textAlign:"center",color:"rgba(255,255,255,.3)",fontSize:11,marginTop:14}}>© Green Carrier 2026</p>
+        <p style={{textAlign:"center",color:"rgba(255,255,255,.3)",fontSize:11,marginTop:14}}>© Hecksher 2026</p>
       </motion.div>
     </div>
   );
@@ -722,7 +722,7 @@ export default function AdminPage(){
             </button>
           </form>
         </div>
-        <p style={{textAlign:"center",color:"rgba(255,255,255,.3)",fontSize:11,marginTop:14}}>© Green Carrier 2026</p>
+        <p style={{textAlign:"center",color:"rgba(255,255,255,.3)",fontSize:11,marginTop:14}}>© Hecksher 2026</p>
       </motion.div>
     </div>
   );

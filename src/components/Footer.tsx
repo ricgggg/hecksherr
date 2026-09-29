@@ -147,7 +147,7 @@ export default function Footer() {
         }}
       >
         <p style={{ fontSize: "13px", fontWeight: 600, color: "rgba(255,255,255,0.6)" }}>
-          © 2026 All rights reserved. HECKSHER — Terms & Conditions · Cookie settings · info@hecksher.com
+          © 2026 All rights reserved. HECKSHER — Terms & Conditions · Cookie settings · info@hecksherr.com
         </p>
         <div style={{ display: "flex", gap: "20px" }}>
           {["Privacy Policy", "Cookie Settings"].map((item) => (

@@ -70,7 +70,7 @@ export default function AboutPage() {
               marginBottom: "16px",
             }}
           >
-            About Green Carrier
+            About Hecksher
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -99,7 +99,7 @@ export default function AboutPage() {
             }}
           >
             Founded on entrepreneurial values and a deep commitment to service
-            excellence, Green Carrier has grown into a trusted global logistics
+            excellence, Hecksher has grown into a trusted global logistics
             group serving clients in over 180 countries.
           </motion.p>
         </div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
           >
             <img
               src="https://images.unsplash.com/photo-1573164574001-518958d9baa2?w=800&q=80"
-              alt="Green Carrier team"
+              alt="Hecksher team"
               style={{
                 width: "100%",
                 height: "480px",
@@ -151,7 +151,7 @@ export default function AboutPage() {
               Built by people who love what they do
             </h2>
             <p style={{ fontSize: "16px", color: "#3a4a5c", lineHeight: 1.8, marginBottom: "20px" }}>
-              Green Carrier was founded by a small team of shipping professionals
+              Hecksher was founded by a small team of shipping professionals
               who believed that great logistics is not just about moving cargo —
               it is about building relationships, solving problems, and treating
               every shipment as if it were their own.
