@@ -20,19 +20,19 @@ const offices = [
     city: "Houston",
     address: "14 Harbor Commerce Drive, Suite 800\nHouston, TX 77002, USA",
     phone: "+1 (713) 555 0198",
-    email: "info@hecksherr.com",
+    email: "houston@hecksherr.com",
   },
   {
     city: "Rotterdam",
     address: "Waalhaven Oostzijde 12\n3087 BM Rotterdam, Netherlands",
     phone: "+31 10 555 0234",
-    email: "info@hecksherr.com",
+    email: "rotterdam@hecksherr.com",
   },
   {
     city: "Singapore",
     address: "80 Raffles Place, Level 22\nSingapore 048624",
     phone: "+65 6555 0178",
-    email: "info@hecksherr.com",
+    email: "singapore@hecksherr.com",
   },
 ];
 
