@@ -13,7 +13,7 @@ const offices = [
   {
     city: "Turkey",
     address: "Fulya Mh Büyükdere Caddesi, Likör Yanı Sk.\nAkabe Ticaret Merkezi No:80 Kat 2/202 No:78\n34437 Şişli/İstanbul, Türkiye",
-    phone: "+971 52 349 4184",
+    phone: "+905 455 934 731",
     email: "turkey@hecksherr.com",
   },
   {
