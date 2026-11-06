@@ -7,7 +7,7 @@ const offices = [
   {
     city: "Stockholm",
     address: "Klarabergsviadukten 63\n101 23 Stockholm, Sweden",
-    phone: "+46 766 920 874",
+    phone: "+46 766 922 723",
     email: "stockholm@hecksherr.com",
   },
   {

@@ -78,7 +78,7 @@ export default function Footer() {
             <br />
             Sweden
             <br />
-            +46 766 920 874
+            +46 766 922 723
           </p>
           <Link
             href="/contact"
